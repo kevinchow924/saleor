@@ -1,0 +1,6 @@
+export SECRET_KEY="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0987654321#$%^&*()<>?:{},;'[]=-_+"
+export DATABASE_URL="postgres://saleor:saleor@127.0.0.1:5433/saleor"
+export REDIS_URL="redis://127.0.0.1:6379/0"
+export DEBUG="True"
+
+

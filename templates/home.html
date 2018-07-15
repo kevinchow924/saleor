@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+
+    <div class="home">
+      <div class="row">
+        <div class="col-sm-12 home__block1">
+          <div class="home--square">
+            <div class="home--content">
+              <div class="home--content-wrapper">
+                <div class="home--content-inner">
+                  <h1>{% trans "养生茶" context "Homepage title" %}</h1>
+                    <a class="btn btn-secondary home__button" href="products/category/yang-sheng-cha-1">
+                        {% trans "了解更多" context "Homepage action" %}
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-6 home__block2">
+          <div class="home--square">
+            <div class="home--content">
+              <div class="home--content-wrapper">
+                <div class="home--content-inner">
+                  <h1>{% trans "养生酒" context "Homepage title" %}</h1>
+                  <a class="btn btn-secondary home__button" href="products/category/yang-sheng-jiu-2">{% trans "了解更多" context "Homepage action" %}</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 home__block3">
+          <div class="home--square">
+            <div class="home--content">
+              <div class="home--content-wrapper">
+                <div class="home--content-inner">
+                  <h1>{% trans "养生茶" context "Homepage title" %}</h1>
+                  <a class="btn btn-secondary home__button" href="/products/category/yang-sheng-cha-1">{% trans "了解更多" context "Homepage action" %}</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="home__featured">
+        <h2 class="text-center">{% trans "Featured products" context "Homepage title" %}</h2>
+        <div class="row">
+          {% include "category/_items.html" %}
+        </div>
+      </div>
+    </div>
+
+{% endblock %}

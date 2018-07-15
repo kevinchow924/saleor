@@ -1,0 +1,8 @@
+#! /bin/sh
+
+. ./saleorenv/bin/activate
+
+. ./set_env.sh
+
+
+python manage.py runserver 0.0.0.0:8000 --setting=saleor.settings &
